@@ -25,7 +25,7 @@ for file_num in range(1,pic_files+1) :
         lapse[i] = single
 
         if i == pics_per_file - 1 :
-            file="lapse/file"+str(file_num).zfill(5)
+            file="data/file"+str(file_num).zfill(5)
             np.save(file=file,arr=lapse)
             print("Saved file",file)
 
